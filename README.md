@@ -7,19 +7,22 @@ Anaconda - Python 3.7
 
 ## Algorithm:
 ### Step1:
-<br>
+Import numpy module as np and pandas as pd.
+
 
 ### Step2:
-<br>
+Assign the values to variables in the program.
+
 
 ### Step3:
-<br>
+Get the values from the user appropriately.
 
 ### Step4:
-<br>
+Continue the program by implementing the codes of required topics.
 
 ### Step5:
-<br>
+Thus the program is executed in jupyter notebook.
+
 
 ## Program:
 ```
