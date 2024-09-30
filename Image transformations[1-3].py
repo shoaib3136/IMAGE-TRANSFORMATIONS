@@ -166,5 +166,41 @@ print("Rotated Image:")
 show_image(rotated_image)
 
 
+##vi.) rotation of image in all four direction:
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+
+# Function to display images in Colab
+def show_image(image):
+    plt.figure(figsize=(6, 6))
+    plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+    plt.axis('off')
+    plt.show()
+
+# Load an image from URL or file path
+image_url = 'nature.jpg'  # Replace with your image URL or file path
+image = cv2.imread(image_url)
+
+# Reflect the image horizontally
+reflected_image_horizontal = cv2.flip(image, 1)
+
+# Reflect the image vertically
+reflected_image_vertical = cv2.flip(image, 0)
+
+# Reflect the image both horizontally and vertically
+reflected_image_both = cv2.flip(image, -1)
+
+# Display original and reflected images
+print("Original Image:")
+show_image(image)
+print("Reflected Horizontally:")
+show_image(reflected_image_horizontal)
+print("Reflected Vertically:")
+show_image(reflected_image_vertical)
+print("Reflected Both:")
+show_image(reflected_image_both)
+
+
 
 
